@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>aNIMATION</title>
+<link rel="stylesheet" href="css/style.css" />
+<style>
+.square {
+	width: 300px;
+	height: 300px;
+	background-color: black;
+	margin: 100px auto;
+	animation-name: spin;
+	animation-duration: 4s;
+	animation-delay: 1s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-play-state: running;
+	animation-direction: alternate;
+}
+.square:hover {
+	transform: scale(2);
+	animation-play-state: paused;
+	transition: .8s;
+}
+
+.rastangle{
+	width: 100px;
+	height: 600px;
+	background-color: yellow;
+	margin: 300px auto;
+	position: absolute;
+	top: 20px;
+	left: 30px;
+	
+}
+@keyframes spin {
+	from{
+		transform: rotate(0deg);
+	}
+	40%{
+		background-color: #333;
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+@keyframes move{
+	from{
+		
+	}
+	to{
+		
+	}
+} 
+
+/*.circle{
+	
+}
+.rastangletwo{
+	
+}
+.ellipse{
+	
+}*/
+</style>
+</head>
+
+<body>
+	<div class="square"></div>
+	<div class="restangle"></div>
+	<div class="circle"></div>
+	<div class="restangletwo"></div>
+	<div class="ellipse"></div>
+</body>
+</html>
